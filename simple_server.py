@@ -3,7 +3,7 @@ from flask import Flask
 app = Flask(__name__)
 @app.route("/", methods = ["GET"])
 def index():
-	page = ""
+    page = ""
     with open("index.html", "r") as rf:
         for line in rf.readlines():
             page += line + "\n"
